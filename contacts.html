@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1 id="logo">Web-Portfolio</h1>
+            
+            <ul id="main-nav">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contacts.html">Contacts</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="contacts-form">
+            <div>
+            <form action="/action_page.php">
+                <label for="name">name:</label><br>
+                <input type="text" id="name" name="name" placeholder="Your name here..."><br>
+                <label for="lname">Last name:</label><br>
+                <input type="text" id="lname" name="lname" placeholder="Your email address..."><br><br>
+                <label for="info">Info:</label>
+                <textarea name="info" form="usrform">What can I do for you...</textarea>
+                <input type="submit" value="Submit">
+              </form>
+            </div>
+            <div>
+                <form action="/action_page.php">
+                    <label for="username">Username:</label><br>
+                    <input type="text" id="username" name="username" placeholder="Youremail@gmail.com"><br>
+                    <label for="password">Password:</label><br>
+                    <input type="text" id="password" name="password" placeholder="*******"><br><br>
+                    <input type="submit" value="LOG IN">
+                    <input type="submit" value="SIGN UP">
+                  </form>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
