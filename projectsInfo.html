@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="handlebars.min.js"></script>
+
+    <script id="templateHB" type="text/x-handlebars-template">
+        {{#each instruments}}
+        <h2 class="titles">{{this.titles}}</h2>
+          <article class="instrument">
+              <img class="image" src="{{this.image}}" alt="{{this.name}}">
+              <section class="details">
+                <h3 class="name">{{this.name}}</h3>
+                <p class="description">{{this.description}}</p>
+                <a href="{{this.click}}">Click for image</a>
+                {{#if sale}}
+                <p class="price"><del>Price: {{this.price}}</del></p>
+                <p class="sale">On Sale! {{this.sale}}</p>
+                {{else}}
+                  
+                {{/if}}
+              </section>
+            </article>
+            {{/each}}
+          </script>
+
+
+</head>
+<body>
+<div id="projectInfo-theme">
+    <header>
+        <nav>
+            <h1 id="logo">Web-Portfolio</h1>
+            
+            <div id="project-nav">
+            <ul>
+                <li id="nav-button-left"><a href="home.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li id="nav-button-right"><a href="contacts.html">Contacts</a></li>
+            </ul>
+        </div>
+        </nav>
+    </header>
+
+    <main>
+        <article id="showcase">
+            <h2><font color="FD7500">MY HTML, CSS,</font> & JAVA<font color="35BFC6">SCRIPT PROJECTS</font></h2>
+            <section class="container" id="information"> 
+            </section>
+          </article>
+    </main>
+</div>
+<script src="javascript.js"></script>  
+</body>
+</html>

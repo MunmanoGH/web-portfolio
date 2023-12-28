@@ -10,6 +10,14 @@ body {
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+/* themes */
+
+.theme {
+    position: relative;
+    left: 1280px;
+    bottom: 120px;
+}
+
 /* Home styles */
 
 #home-theme {
@@ -85,7 +93,7 @@ body {
     left: 688px;
     width: 300px;
     background-color: rgba(255, 255, 255, 0.5);
-    font-size: 24px;
+    font-size: 20px;
     color: black;
     border: 1px solid black;
     padding: 5px;
@@ -166,6 +174,11 @@ body {
 
 #pr-button-right {
     border-radius: 0 25px 25px 0;
+}
+
+.content a {
+    color: white;
+    text-decoration: none;
 }
 
 #first-sec h2 {
@@ -257,3 +270,93 @@ textarea {
     padding: 10px;
     width: 150px;
 }
+
+#social-medias {
+    width: 250px;
+    background-color: rgba(0, 0, 0, 0.804);
+    text-align: center;
+    border-radius: 25px;
+    margin: 20px auto;
+}
+
+#social-medias img {
+    width: 30px;
+    margin: 10px;
+}
+
+#social-medias div {
+    display: inline-block;
+}
+
+
+/* Projects Info */
+
+#projectInfo-theme {
+    background-image: url("assets/cool-website-background-021.jpg");
+    background-repeat: repeat-y;
+}
+
+.instrument {
+    width: 80%;
+    overflow: auto;
+    background-color: rgba(255, 255, 255, 0.515);
+    opacity: 0.9;
+    padding: 2% 5%;
+    margin: 5% auto;
+    border-radius: 5px;
+  }
+
+  .instrument a {
+    background-color: rgba(0, 0, 0, 0.806);
+    padding: 5px;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+  }
+  
+  .image {
+    display: inline-block;
+    vertical-align: middle;
+    width: 32%;
+    min-width: 100px;
+    margin: 0 auto;
+  }
+  
+  .details {
+    display: inline-block;
+    vertical-align: middle;
+    width: 60%;
+    margin: -1% auto;
+    padding: 2%;
+  }
+  
+  .name, .description {
+    color: #000000;
+    text-align: center;
+  }
+  
+  .description, .price {
+    margin-top: 0;
+    margin-bottom: 16px;
+  }
+  
+  .description {
+    height: 100%;
+    font-size: 20px;
+    overflow: auto;
+  }
+
+  .titles {
+    float: left;
+    margin-left: 70px;
+  }
+
+ main {
+    padding-bottom: 20px;
+  }
+
+  #showcase h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-top: 80px;
+  }
