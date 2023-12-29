@@ -1,4 +1,17 @@
 
+function changeWTheme() {
+  document.querySelector('html').style.backgroundImage = "url('assets/winter.jpg')";
+  document.querySelector('html').style.backgroundOrigin = 'cover';
+  document.querySelector('html').style.backgroundRepeat = 'no-repeat';
+
+}
+
+function changeSTheme() {
+  document.querySelector('html').style.backgroundImage = "url('assets/summer.jpg')";
+  document.querySelector('html').style.backgroundSize = 'cover';
+}
+
+
 
 const context = {
     instruments: [
