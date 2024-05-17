@@ -6,8 +6,7 @@ function myFunction() {
 window.onclick = function(event) {
   if (!event.target.matches('.dropbtn')) {
     var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
+    for (let i = 0; i < dropdowns.length; i++) {
       var openDropdown = dropdowns[i];
       if (openDropdown.classList.contains('show')) {
         openDropdown.classList.remove('show');
@@ -16,18 +15,17 @@ window.onclick = function(event) {
   }
 }
 
+// changing the theme to winter
 function changeWTheme() {
   document.querySelector('html').style.backgroundImage = "url('assets/winter.jpg')";
   document.querySelector('html').style.backgroundOrigin = 'cover';
-  document.querySelector('html').style.backgroundRepeat = 'no-repeat';
-
 }
 
+// changing theme to summer
 function changeSTheme() {
   document.querySelector('html').style.backgroundImage = "url('assets/summer.jpg')";
   document.querySelector('html').style.backgroundSize = 'cover';
 }
-
 
 
 const context = {
