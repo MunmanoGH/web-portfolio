@@ -3,22 +3,22 @@ html {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    width: 100%;
     box-sizing: border-box;
-    font-size: 16px;
 }
 
 body {
     max-width: 1388px;
-    width: 100%;
-    margin: 0 auto;
-    font-size: 16px;
+    margin: auto;
+    margin-top: 50px;
+    font-size: 16px; 
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     border: 2px solid white;
 }
 /* themes */
 
 .dropdown {
-    position: absolute;
+    position: relative;
     left: 92.57%;
     bottom: 110px;
     border: 1px solid white;
@@ -29,7 +29,7 @@ body {
     color: black;
     font-weight: bold;
     padding: 16px;
-    font-size: 16px;
+    font-size: 1rem;
     border: none;
     cursor: pointer;
   }
@@ -69,11 +69,15 @@ body {
     display: block;
 }
 
-/* Home styles */
+/* Home */
 
 #home-theme {
     background-image: url("assets/black-background-04-coolbackgrounds.png");
     height: 768px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: -20px;
 }
 
 /* header */
@@ -81,18 +85,16 @@ body {
 #logo {
     position: relative;
     top: 25px;
-    width: 15.85%; /* 220 */ 
+    width: 15.85%; /* 220 - 1388 */ 
     background-color: rgba(255, 255, 255, 0.7);
-    font-size: 28px;
+    font-size: 1.5rem; 
     color: rgba(0, 0, 0, 0.9);
     text-align: center;
     padding: 10px;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
+    border-radius: 0px 15px 15px 0;
 }
 
 #home-nav ul {
-    display: block;
     position: relative;
     text-align: center;
     bottom: 40px;
@@ -100,9 +102,9 @@ body {
 }
 
 #home-nav li {
-    display: inline-block;
+    display: inline;
     padding: 0 5%;
-    font-size: 28px;
+    font-size: 1.75rem;
 }
 
 #home-nav li a {
@@ -113,24 +115,25 @@ body {
 /* main */
 
 #introduction .content1 {
-    float: left;
+    display: inline-block;
     margin-left: 2.16%;
-    width: 21.61%; /* 300 */
+    width: 21.61%; /* 300 / 1388 */
     min-width: 200px;
-    height: 480px;
+    height: auto;
     background-color: rgba(0,0,0, 0.8);
     color: rgba(255, 255, 255, 0.9);
     text-align: center;
     padding: 1.44%;
-    font-size: 26px;
+    font-size: 1.62rem;
     border: 1px solid white;
 }
 
 #introduction .content2 {
-    float: left;
+    display: inline-block;
+    vertical-align: top;
     background-image: url("assets/fabian-irsara-67l-QujB14w-unsplash.jpg");
     background-size: cover;
-    width: 72%; /* 1000 */
+    width: 72%; /* 1000 / 1388 */
     height: 570px;
     border: 1px solid white;
 }
@@ -141,25 +144,25 @@ body {
     left: 68.8%;
     width: 30%; /* 300 */
     background-color: rgba(255, 255, 255, 0.5);
-    font-size: 20px;
+    font-size: 1.25rem;
     color: black;
     border: 1px solid black;
     padding: 5px;
     text-align: center;
-
 }
 
-
-/* project style */
+/* project */
 
 #project-theme {
     background-image: url("assets/cool-website-background-021.jpg");
-    background-repeat: repeat-y;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: -20px;
 }
 
 #project-nav ul {
-    float: right;
-     
+     float: right;
 }
 
 #project-nav li {
@@ -206,7 +209,7 @@ body {
     background-color: rgba(0, 0, 0, 0.8);
     padding: 25px;
     height: 250px;
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 
 #proj-contents div span {
@@ -232,7 +235,7 @@ body {
 
 #first-sec h2 {
     text-align: center;
-    font-size: 36px;
+    font-size: 2.25rem;
     margin-top: 80px;
 }
 
@@ -242,18 +245,22 @@ body {
 #contacts-theme {
     background-image: url("assets/contact.jpg");
     height: 768px;
+    background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
+    margin-top: -20px;
 }
 
 #contacts-nav ul {
-    text-align: center;
+    display: block;
     margin-left: 41%; /* 570 */
+    text-align: center;
 }
 
 #contacts-nav li {
     display: inline-block;
     text-align: center;
-    font-size: 24px;
+    font-size: 1.5rem;
     padding: 10px 50px;
     background-color: rgba(0, 0, 0, 0.8);
     border: 1px solid white;
@@ -272,7 +279,7 @@ body {
     border-radius: 0 0 20px 0;
 }
 
-/* main */
+/* form */
 
 #contact-forms {
     margin-left: 17%; /* 235 */
@@ -281,39 +288,36 @@ body {
 }
 
 #contact-forms .content1 {
-    float: left;
+    display: inline-block;
     width: 32.42%; /* 450 */
     min-width: 300px;
-    height: 500px;
+    padding: 20px;
     background-color: rgba(0, 0, 0, 0.5);
     border-left: 10px solid white;
     border-bottom-right-radius: 20px;
     text-align: center;
     color: white;
     padding-top: 50px;
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 #contact-forms .content2 {
+    display: inline-block;
     width: 40%; /* 560 */
     min-width: 300px;
-    height: 540px;
     text-align: center;
-    float: left;
-    
     color: white;
-    font-size: 16px;
-    padding-top: 100px;
+    font-size: 1rem;
 }
 
 #contact-forms input, textarea {
-    width: 66.66%; /* 300 */ 
+    width: 66.66%; /* 300 */
     padding: 10px;
     margin: 10px;
 }
 
 textarea {
-    height: 130px;
+    height: 10vh; /* 10% view */
 }
 
 #contact-forms .button {
@@ -326,7 +330,6 @@ textarea {
 #social-medias {
     width: 44.64%; /* 250 */
     background-color: rgba(0, 0, 0, 0.804);
-    text-align: center;
     border-radius: 25px;
     margin: 20px auto;
 }
@@ -336,16 +339,11 @@ textarea {
     margin: 10px;
 }
 
-#social-medias div {
-    display: inline-block;
-}
-
-
 /* Projects Info */
 
 #projectInfo-theme {
     background-image: url("assets/cool-website-background-021.jpg");
-    background-repeat: repeat-y;
+    margin-top: -20px;
 }
 
 .instrument {
@@ -362,7 +360,7 @@ textarea {
     background-color: rgba(0, 0, 0, 0.806);
     padding: 5px;
     color: white;
-    font-size: 20px;
+    font-size: 1.25rem;
     text-decoration: none;
     border-radius: 5px;
   }
@@ -401,7 +399,7 @@ textarea {
 
   .titles {
     float: left;
-    margin-left: 70px;
+    margin-left: 9.1%;
   }
 
  main {
@@ -410,18 +408,22 @@ textarea {
 
   #showcase h2 {
     text-align: center;
-    font-size: 36px;
+    font-size: 2.25rem;
     margin-top: 80px;
   }
 
+  /* media queires*/
 
-  @media screen and (max-width: 1150px) {
+ @media screen and (max-width: 1150px) {
+/* home */
+
     #introduction .content2, #introduction .content1 {
         width: 100%;
     }
     #introduction .content1 {
         margin: auto;
         font-size: 40px;
+        padding: 5px;
     }
     .dropdown {
         display: none;
@@ -429,19 +431,60 @@ textarea {
   }
 
   @media screen and (max-width: 900px) {
-    #project-theme {
-        background-image: url("assets/cool-website-background-021.jpg");
-        background-repeat: repeat-y;
+    /* selector in all pages  */
+    body {
+        margin-top: 0px;
     }
-    #proj-contents div {
-        margin-top: 50px;
+
+    /*contact*/
+    #contacts-nav ul {
+        width: 100%;
+        margin-left: -40px;
+    }
+    
+    #contacts-nav li {
+        display: block;
+        margin-top: 5px;
+    }
+
+    #contact-forms .content1 {
+        float: none;
+        width: 100%;
+        margin-left: -120px;
+    }
+    
+    #contact-forms .content2 {
+        width: 100%;
+        margin-left: -110px;
     }
   }
 
-  @media screen and (max-width: 700px) {
-    #contact-forms .content1, 
-    #contact-forms .content2,
-    #contacts-nav ul {
-        width: 100%;
+@media screen and (max-width: 650px) {
+    /* selectors in all pages */
+    body {
+        margin-top: 0px;
     }
-  }
+
+    #logo {
+        display: none;
+    }
+
+
+    /* home */
+    #home-nav ul {
+        display: block;
+        width: 100%;
+        margin-top: 100px;
+        margin-left: -90px;
+    }
+
+    #home-nav li {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        color: black;
+        background-color: rgba(255, 255, 255, 0.3);
+        border-bottom: 2px solid black;
+    }
+
+}
