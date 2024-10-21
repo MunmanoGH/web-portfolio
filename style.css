@@ -525,7 +525,11 @@ main {
     #project-theme {
         margin-top: -80px;
     }
+
+    #projectInfo-theme {
+        margin-top: -80px;
+    }
     #first-sec h2 {
-        padding: 20px;
+        padding: 10px;
     }
 }
