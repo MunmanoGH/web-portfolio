@@ -529,7 +529,9 @@ main {
     #projectInfo-theme {
         margin-top: -80px;
     }
-    #first-sec h2 {
+    #first-sec h2, #showcase h2 {
         padding: 10px;
     }
+
+
 }
