@@ -15,6 +15,54 @@ body {
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     border: 2px solid white;
 }
+
+/* drop down menu */
+.dropdownM {
+    display: none;
+  }
+  
+  .dropbtnM {
+    background-color: #3498db;
+    color: white;
+    padding: 16px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    width: 75px;
+  }
+  
+  .dropdown-contentM {
+    display: none;
+    position: relative;
+    background-color: #00000087;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    width: 200px;
+    margin: auto;
+    border: 1px solid white;
+  }
+  
+  .dropdown-contentM a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-contentM a:hover {
+    background-color: #f1f1f110;
+  }
+  
+  .dropdownM:hover .dropdown-contentM {
+    display: block;
+  }
+  
+.dropdownM:hover .dropbtnM {
+    background-color: #2980b9;
+}
+
+
 /* themes */
 
 .dropdown {
@@ -82,7 +130,7 @@ body {
 
 /* header */
 
-#logo {
+.logo {
     position: relative;
     top: 25px;
     width: 15.85%; /* 220 - 1388 */ 
@@ -436,26 +484,37 @@ textarea {
         margin-top: 0px;
     }
 
-    /*contact*/
-    #contacts-nav ul {
-        width: 100%;
-        margin-left: -40px;
-    }
-    
-    #contacts-nav li {
-        display: block;
-        margin-top: 5px;
+    #contacts-nav {
+        display: none;
     }
 
-    #contact-forms .content1 {
-        float: none;
+    .dropdownM {
+        display: block;
+        text-align: center;
+        padding: 30px;
+    }
+
+    .contactL {
+        display: none;
+    }
+
+    #contacts-theme {
         width: 100%;
+        height: 1200px;
+    }
+
+    /*contact*/
+
+    #contact-forms .content1 {
+        width: 90%;
         margin-left: -120px;
+        margin-top: 10px;
     }
     
     #contact-forms .content2 {
-        width: 100%;
+        width: 90%;
         margin-left: -110px;
+        margin-top: 30px;
     }
   }
 
