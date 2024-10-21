@@ -9,19 +9,18 @@ html {
 
 body {
     max-width: 1388px;
-    margin: auto;
-    margin-top: 50px;
-    font-size: 16px; 
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 50px auto;
+    font-size: 16px;
+    font-family: 'Lucida Sans', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     border: 2px solid white;
 }
 
-/* drop down menu */
+/* Drop down menu */
 .dropdownM {
     display: none;
-  }
-  
-  .dropbtnM {
+}
+
+.dropbtnM {
     background-color: #3498db;
     color: white;
     padding: 16px;
@@ -29,47 +28,44 @@ body {
     border: none;
     cursor: pointer;
     width: 75px;
-  }
-  
-  .dropdown-contentM {
+}
+
+.dropdown-contentM {
     display: none;
     position: relative;
     background-color: #00000087;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
     z-index: 1;
     width: 200px;
     margin: auto;
     border: 1px solid white;
-  }
-  
-  .dropdown-contentM a {
+}
+
+.dropdown-contentM a {
     color: white;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
-  }
-  
-  .dropdown-contentM a:hover {
+}
+
+.dropdown-contentM a:hover {
     background-color: #f1f1f110;
-  }
-  
-  .dropdownM:hover .dropdown-contentM {
+}
+
+.dropdownM:hover .dropdown-contentM {
     display: block;
-  }
-  
+}
+
 .dropdownM:hover .dropbtnM {
     background-color: #2980b9;
 }
 
-
-/* themes */
-
+/* Themes */
 .dropdown {
     position: relative;
     left: 92.57%;
     bottom: 110px;
-    border: 1px solid white;
 }
 
 .dropbtn {
@@ -80,45 +76,40 @@ body {
     font-size: 1rem;
     border: none;
     cursor: pointer;
-  }
-  
-  .dropbtn:hover, .dropbtn:focus {
+}
+
+.dropbtn:hover,
+.dropbtn:focus {
     background-color: #A06040;
-  }
-  
-  .dropdown {
-    position: relative;
-    display: inline-block;
-  }
-  
-  .dropdown-content {
+}
+
+.dropdown-content {
     display: none;
     position: absolute;
     background-color: black;
     overflow: auto;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
     z-index: 1;
-  }
-  
-  .dropdown-content button {
-    color:white;
+}
+
+.dropdown-content button {
+    color: white;
     background-color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
     width: 100px;
-  }
-  
-  .dropdown button:hover {
+}
+
+.dropdown button:hover {
     background-color: #ddd;
 }
-  
-  .show {
+
+.show {
     display: block;
 }
 
 /* Home */
-
 #home-theme {
     background-image: url("assets/black-background-04-coolbackgrounds.png");
     height: 768px;
@@ -128,18 +119,17 @@ body {
     margin-top: -20px;
 }
 
-/* header */
-
+/* Header */
 .logo {
     position: relative;
     top: 25px;
-    width: 15.85%; /* 220 - 1388 */ 
+    width: 15.85%;
     background-color: rgba(255, 255, 255, 0.7);
-    font-size: 1.5rem; 
+    font-size: 1.5rem;
     color: rgba(0, 0, 0, 0.9);
     text-align: center;
     padding: 10px;
-    border-radius: 0px 15px 15px 0;
+    border-radius: 0 15px 15px 0;
 }
 
 #home-nav ul {
@@ -160,15 +150,14 @@ body {
     text-decoration: none;
 }
 
-/* main */
-
+/* Main */
 #introduction .content1 {
     display: inline-block;
     margin-left: 2.16%;
-    width: 21.61%; /* 300 / 1388 */
+    width: 21.61%;
     min-width: 200px;
     height: auto;
-    background-color: rgba(0,0,0, 0.8);
+    background-color: rgba(0, 0, 0, 0.8);
     color: rgba(255, 255, 255, 0.9);
     text-align: center;
     padding: 1.44%;
@@ -181,7 +170,7 @@ body {
     vertical-align: top;
     background-image: url("assets/fabian-irsara-67l-QujB14w-unsplash.jpg");
     background-size: cover;
-    width: 72%; /* 1000 / 1388 */
+    width: 72%;
     height: 570px;
     border: 1px solid white;
 }
@@ -190,7 +179,7 @@ body {
     position: relative;
     top: 450px;
     left: 68.8%;
-    width: 30%; /* 300 */
+    width: 30%;
     background-color: rgba(255, 255, 255, 0.5);
     font-size: 1.25rem;
     color: black;
@@ -199,8 +188,7 @@ body {
     text-align: center;
 }
 
-/* project */
-
+/* Project */
 #project-theme {
     background-image: url("assets/cool-website-background-021.jpg");
     background-repeat: no-repeat;
@@ -210,7 +198,7 @@ body {
 }
 
 #project-nav ul {
-     float: right;
+    float: right;
 }
 
 #project-nav li {
@@ -231,6 +219,7 @@ body {
     text-decoration: none;
 }
 
+/* Project Contents */
 #proj-contents {
     display: flex;
     justify-content: space-evenly;
@@ -239,7 +228,7 @@ body {
 }
 
 #proj-contents div {
-    width: 21.61%; /* 300 */
+    width: 21.61%;
     min-width: 300px;
     color: white;
     text-align: center;
@@ -248,7 +237,7 @@ body {
 }
 
 #proj-contents img {
-    width: 33%; /* 100 */
+    width: 33%;
     border-radius: 50px;
     border: 1px solid black;
 }
@@ -263,7 +252,7 @@ body {
 #proj-contents div span {
     position: relative;
     bottom: 40px;
-    width: 50%; /* 150 */
+    width: 50%;
     background-color: black;
     padding: 15px;
 }
@@ -287,9 +276,7 @@ body {
     margin-top: 80px;
 }
 
-
 /* Contacts */
-
 #contacts-theme {
     background-image: url("assets/contact.jpg");
     height: 768px;
@@ -301,7 +288,7 @@ body {
 
 #contacts-nav ul {
     display: block;
-    margin-left: 41%; /* 570 */
+    margin-left: 41%;
     text-align: center;
 }
 
@@ -327,17 +314,16 @@ body {
     border-radius: 0 0 20px 0;
 }
 
-/* form */
-
+/* Form */
 #contact-forms {
-    margin-left: 17%; /* 235 */
+    margin-left: 17%;
     margin-bottom: -17px;
     width: 100%;
 }
 
 #contact-forms .content1 {
     display: inline-block;
-    width: 32.42%; /* 450 */
+    width: 32.42%;
     min-width: 300px;
     padding: 20px;
     background-color: rgba(0, 0, 0, 0.5);
@@ -347,48 +333,49 @@ body {
     color: white;
     padding-top: 50px;
     font-size: 1rem;
+    min-width: 200px;
 }
 
 #contact-forms .content2 {
     display: inline-block;
-    width: 40%; /* 560 */
+    width: 40%;
     min-width: 300px;
     text-align: center;
     color: white;
     font-size: 1rem;
+    min-width: 200px;
 }
 
 #contact-forms input, textarea {
-    width: 66.66%; /* 300 */
+    width: 66.66%;
     padding: 10px;
     margin: 10px;
 }
 
 textarea {
-    height: 10vh; /* 10% view */
+    height: 10vh;
 }
 
 #contact-forms .button {
     background-color: rgba(0, 0, 0, 0.8);
     color: white;
     padding: 10px;
-    width: 33%; /* 150 */
+    width: 33%;
 }
 
 #social-medias {
-    width: 44.64%; /* 250 */
+    width: 44.64%;
     background-color: rgba(0, 0, 0, 0.804);
     border-radius: 25px;
     margin: 20px auto;
 }
 
 #social-medias img {
-    width: 12%; /* 30 */
+    width: 12%;
     margin: 10px;
 }
 
 /* Projects Info */
-
 #projectInfo-theme {
     background-image: url("assets/cool-website-background-021.jpg");
     margin-top: -20px;
@@ -402,69 +389,67 @@ textarea {
     padding: 2% 5%;
     margin: 5% auto;
     border-radius: 5px;
-  }
+}
 
-  .instrument a {
+.instrument a {
     background-color: rgba(0, 0, 0, 0.806);
     padding: 5px;
     color: white;
     font-size: 1.25rem;
     text-decoration: none;
     border-radius: 5px;
-  }
-  
-  .image {
+}
+
+.image {
     display: inline-block;
     vertical-align: middle;
     width: 32%;
     min-width: 100px;
     margin: 0 auto;
-  }
-  
-  .details {
+}
+
+.details {
     display: inline-block;
     vertical-align: middle;
     width: 60%;
     margin: -1% auto;
     padding: 2%;
-  }
-  
-  .name, .description {
+}
+
+.name, .description {
     color: #000000;
     text-align: center;
-  }
-  
-  .description, .price {
+}
+
+.description, .price {
     margin-top: 0;
     margin-bottom: 16px;
-  }
-  
-  .description {
+}
+
+.description {
     height: 100%;
     font-size: 20px;
     overflow: auto;
-  }
+}
 
-  .titles {
+.titles {
     float: left;
     margin-left: 9.1%;
-  }
+}
 
- main {
+main {
     padding-bottom: 20px;
-  }
+}
 
-  #showcase h2 {
+#showcase h2 {
     text-align: center;
     font-size: 2.25rem;
     margin-top: 80px;
-  }
+}
 
-  /* media queires*/
-
- @media screen and (max-width: 1150px) {
-/* home */
-
+/* Media Queries */
+@media screen and (max-width: 1150px) {
+    /* Home */
     #introduction .content2, #introduction .content1 {
         width: 100%;
     }
@@ -476,67 +461,56 @@ textarea {
     .dropdown {
         display: none;
     }
-  }
+}
 
-  @media screen and (max-width: 900px) {
-    /* selector in all pages  */
+@media screen and (max-width: 900px) {
+    /* Selector in all pages */
     body {
         margin-top: 0px;
     }
-
     #contacts-nav {
         display: none;
     }
-
     .dropdownM {
         display: block;
         text-align: center;
         padding: 30px;
     }
-
     .contactL {
         display: none;
     }
-
     #contacts-theme {
         width: 100%;
         height: 1200px;
     }
-
-    /*contact*/
-
+    /* Contact */
     #contact-forms .content1 {
         width: 90%;
         margin-left: -120px;
         margin-top: 10px;
     }
-    
     #contact-forms .content2 {
         width: 90%;
         margin-left: -110px;
         margin-top: 30px;
     }
-  }
+}
 
 @media screen and (max-width: 650px) {
-    /* selectors in all pages */
-    body {
-        margin-top: 0px;
-    }
-
-    #logo {
+    /* Selectors in all pages */
+    .logo {
         display: none;
     }
-
-
-    /* home */
+    #home-theme {
+        margin-top: -100px;
+    }
+    /* Home */
     #home-nav ul {
         display: block;
         width: 100%;
-        margin-top: 100px;
+        padding-top: 150px;
         margin-left: -90px;
     }
-
     #home-nav li {
         display: block;
         width: 100%;
@@ -545,5 +519,13 @@ textarea {
         background-color: rgba(255, 255, 255, 0.3);
         border-bottom: 2px solid black;
     }
-
+    #text-project {
+        left: 10px;
+    }
+    #project-theme {
+        margin-top: -80px;
+    }
+    #first-sec h2 {
+        padding: 20px;
+    }
 }
